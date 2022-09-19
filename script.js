@@ -1,10 +1,10 @@
-const browse = document.getElementById("browse");
+// const browse = document.getElementById("browse");
 
-browse.addEventListener("mouseover", (event) => {
-        let video = document.querySelector(".landing__video")
-        let muted = video.setAttribute('muted')
-        return muted
-}
+// browse.addEventListener("mouseover", (event) => {
+//         let video = document.querySelector(".landing__video")
+//         let muted = video.setAttribute('muted')
+//         return muted
+// }
 
 // let isMouseHover = false
 // let test = document.getElementById("browse");
