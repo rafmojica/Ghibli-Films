@@ -51,15 +51,18 @@
       </header>
       <video
         class="landing__video"
-        onloadstart="this.volume = 0.5"
-        src="./assets/studio ghibli compilation.mp4"
-        loop
         autoplay
-      ></video>
+        loop
+        plays-inline
+        onloadstart="this.volume = 0.5"
+      >
+        <source src="assets/Studio Ghibli Compilation.mp4" type="video/mp4" />
+      </video>
+      <script>
+        document.querySelector(".landing__video").play();
+      </script>
       <div class="overlay"></div>
     </section>
-    <section id="browse">
-
-    </section>
+    <section id="browse"></section>
   </body>
 </html>
