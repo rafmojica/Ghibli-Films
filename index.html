@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Studio Ghibli</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <section id="landing">
+      <nav class="nav-bar">
+        <figure class="logo__wrapper">
+          <img class="logo" src="./assets/Studio_Ghibli_logo.svg" alt="" />
+        </figure>
+        <ul class="nav__links">
+          <li>
+            <a
+              class="nav__link link__hover-effect link__hover-effect__black"
+              href="#"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              class="nav__link link__hover-effect link__hover-effect__black"
+              href="#"
+              >Directory</a
+            >
+          </li>
+          <li>
+            <a
+              class="nav__link link__hover-effect link__hover-effect__black"
+              href="#"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <header class="header">
+        <div class="header__content">
+          <h5>株式会社スタジオジブリ</h5>
+          <h1 class="header__title">Studio Ghibli Directory</h1>
+          <div class="header__para">
+            <p>The best place to view all the films made by Studio Ghibli!</p>
+          </div>
+          <button class="btn"><a href="#browse">Start Browsing</a></button>
+          <!-- Add Studio Ghibli film compilation (video) as background of landing page -->
+        </div>
+      </header>
+      <video
+        class="landing__video"
+        onloadstart="this.volume = 0.5"
+        src="./assets/studio ghibli compilation.mp4"
+        loop
+        autoplay
+      ></video>
+      <div class="overlay"></div>
+    </section>
+    <section id="browse">
+
+    </section>
+  </body>
+</html>

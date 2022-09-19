@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;900&family=Montserrat:wght@400;500;600;700;800&family=Noto+Sans+JP:wght@300;400;500;700;900&family=Roboto:wght@400;500;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans JP", sans-serif;
+  color: #1B1B1B;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #f8eeec;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style-type: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* 
+
+LANDING PAGE
+
+*/
+
+#landing {
+  height: 100vh;
+}
+
+.logo__wrapper {
+  display: flex;
+}
+
+.logo {
+  width: 200px;
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 24px;
+  background-color: #fbfcf8;
+}
+
+.nav__links {
+  display: flex;
+}
+
+.nav__link {
+  font-size: large;
+  font-weight: 800;
+  margin-left: 24px;
+}
+
+.header {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 32px;
+}
+
+.header__content {
+  position: relative;
+  z-index: 10;
+}
+
+.header__title {
+  font-size: 56px;
+  font-weight: 800;
+}
+
+.header__para {
+  padding-bottom: 16px;
+}
+
+.btn {
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 50px;
+  width: 100%;
+  max-width: 240px;
+  color: #fbfcf8;
+  background-color: #1B1B1B;
+  transition: all 300ms ease;
+}
+
+.btn:hover {
+  background-color: transparent;
+  color: #1B1B1B;
+}
+
+.landing__video {
+  position: absolute;
+  width: 100%;
+  height: calc(100vh - 112.22px);
+  object-fit: cover;
+  opacity: 0.8;
+  z-index: -1;
+}
+
+/*
+
+BROWSE 
+
+*/
+
+#browse {
+  height: 100vh;
+}
+
