@@ -7,6 +7,10 @@
     <title>Studio Ghibli</title>
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/fd56eb3ace.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <section id="landing">
@@ -57,13 +61,89 @@
         plays-inline
         onloadstart="this.volume = 0.5"
       >
-        <source src="assets/Studio Ghibli Background Video.mp4" type="video/mp4" />
+        <source
+          src="assets/Studio Ghibli Background Video.mp4"
+          type="video/mp4"
+        />
       </video>
       <script>
         document.querySelector(".landing__video").play();
       </script>
-      <div class="overlay"></div>
+      <!-- <svg id="visual" viewBox="0 0 900 600" width="900" height="600" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"><path d="M0 513L25 518.8C50 524.7 100 536.3 150 537.7C200 539 250 530 300 526.2C350 522.3 400 523.7 450 528C500 532.3 550 539.7 600 546.8C650 554 700 561 750 556.2C800 551.3 850 534.7 875 526.3L900 518L900 601L875 601C850 601 800 601 750 601C700 601 650 601 600 601C550 601 500 601 450 601C400 601 350 601 300 601C250 601 200 601 150 601C100 601 50 601 25 601L0 601Z" fill="#f8eeec" stroke-linecap="round" stroke-linejoin="miter"></path></svg> -->
     </section>
-    <section id="browse"></section>
+    <section id="browse">
+      <div class="container">
+        <div class="row">
+          <div class="search__box">
+            <div class="search">
+              <div class="search__text">
+                <h1>Search for any Studio Ghibli film</h1>
+                <h3>Click on search icon, then type the title.</h3>
+              </div>
+              <div class="search__bar">
+                <input type="text" placeholder="Search . . ." required />
+              </div>
+            </div>
+          </div>
+          <div class="movies__wrapper">
+            <div class="movie">
+              <figure class="movie__img--wrapper">
+                <img
+                  src="https://m.media-amazon.com/images/M/MV5BMjlmZmI5MDctNDE2YS00YWE0LWE5ZWItZDBhYWQ0NTcxNWRhXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg"
+                  alt=""
+                  class="movie__img"
+                />
+              </figure>
+              <p class="movie__title">Spirited Away</p>
+              <p class="movie__year">2001</p>
+            </div>
+            <div class="movie">
+              <figure class="movie__img--wrapper">
+                <img
+                  src="https://m.media-amazon.com/images/M/MV5BMjlmZmI5MDctNDE2YS00YWE0LWE5ZWItZDBhYWQ0NTcxNWRhXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg"
+                  alt=""
+                  class="movie__img"
+                />
+              </figure>
+              <p class="movie__title">Spirited Away</p>
+              <p class="movie__year">2001</p>
+            </div>
+            <div class="movie">
+              <figure class="movie__img--wrapper">
+                <img
+                  src="https://m.media-amazon.com/images/M/MV5BMjlmZmI5MDctNDE2YS00YWE0LWE5ZWItZDBhYWQ0NTcxNWRhXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg"
+                  alt=""
+                  class="movie__img"
+                />
+              </figure>
+              <p class="movie__title">Spirited Away</p>
+              <p class="movie__year">2001</p>
+            </div>
+            <div class="movie">
+              <figure class="movie__img--wrapper">
+                <img
+                  src="https://m.media-amazon.com/images/M/MV5BMjlmZmI5MDctNDE2YS00YWE0LWE5ZWItZDBhYWQ0NTcxNWRhXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg"
+                  alt=""
+                  class="movie__img"
+                />
+              </figure>
+              <p class="movie__title">Spirited Away</p>
+              <p class="movie__year">2001</p>
+            </div>
+            <div class="movie">
+              <figure class="movie__img--wrapper">
+                <img
+                  src="https://m.media-amazon.com/images/M/MV5BMjlmZmI5MDctNDE2YS00YWE0LWE5ZWItZDBhYWQ0NTcxNWRhXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg"
+                  alt=""
+                  class="movie__img"
+                />
+              </figure>
+              <p class="movie__title">Spirited Away</p>
+              <p class="movie__year">2001</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
