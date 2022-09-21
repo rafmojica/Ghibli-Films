@@ -6,18 +6,17 @@ async function main() {
   const films = await fetch("https://ghibliapi.herokuapp.com/films");
   const filmsData = await films.json();
   filmsDataEl.innerHTML = filmsData.map((films) => filmsHTML(films)).join("");
-  console.log(filmsData);
 }
 
 main();
 
 function showMovie(id) {
-    localStorage.setItem("id", id)
-  window.location.href = `${window.location.origin}/movie.html`
+  localStorage.setItem("id", id);
+  window.location.href = `${window.location.origin}/movie.html`;
 }
 
 function filmsHTML(films) {
-  return `<div class="movie" onclick="showMovie(${films.id})">
+  return `<div class="movie" onclick="showMovie('${films.id}')">
     <figure class="movie__img--wrapper">
       <img
         src="${films.image}"
