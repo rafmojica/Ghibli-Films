@@ -1,7 +1,7 @@
 const movieEl = document.querySelector(".movie__info");
+const id = localStorage.getItem("id");
 
 async function main() {
-  const id = localStorage.getItem("id");
   const movie = await fetch(`https://ghibliapi.herokuapp.com/films/${id}`);
   const movieData = await movie.json();
 
