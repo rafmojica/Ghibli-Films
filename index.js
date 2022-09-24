@@ -15,12 +15,14 @@ searchBar.addEventListener("keyup", (event) => {
 async function renderFilms(filter) {
   const films = await fetch("https://ghibliapi.herokuapp.com/films");
   filmsData = await films.json();
-  const filterFilms = filmsData.filter((film) => film);
   displayFilms(filmsData);
-  console.log(displayFilms(filterFilms));
-  
-  if (filter === "DESCENDING_YEAR") {
-    displayFilms(filterFilms).sort((a, b) => a.release_date - b.release_date);
+
+  if (filter === "ASCENDING_YEAR") {
+    displayFilms(filmsData.sort((a, b) => a.release_date - b.release_date));
+  } else if (filter === "DESCENDING_YEAR") {
+    displayFilms(filmsData.sort((a, b) => b.release_date - a.release_date));
+  } else if (filter === "RATING") {
+    displayFilms(filmsData.sort((a, b) => b.rt_score - a.rt_score));
   }
 }
 
